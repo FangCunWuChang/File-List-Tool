@@ -22,7 +22,7 @@ void DFS(QStringList *pl,QString path,int mode,QString root,QString cheat)
                     printpath.prepend(cheat);
                 }
                 if(mode==2){
-                    printpath.prepend("..");
+                    printpath.prepend(".");
                 }
             }
             qDebug()<<"     "<<printpath.toStdString().c_str();
@@ -47,7 +47,7 @@ QStringList FS(QStringList *pl,int mode,QString root,QString cheat)
                     printfile.prepend(cheat);
                 }
                 if(mode==2){
-                    printfile.prepend("..");
+                    printfile.prepend(".");
                 }
             }
             qDebug()<<"     "<<printfile.toStdString().c_str();
@@ -139,7 +139,7 @@ int main(int argc, char *argv[])
                     printpath.prepend(cheat);
                 }
                 if(mode==2){
-                    printpath.prepend("..");
+                    printpath.prepend(".");
                 }
             }
             qDebug()<<"    "<<printpath.toStdString().c_str();
@@ -158,7 +158,7 @@ int main(int argc, char *argv[])
                     pt.prepend(cheat);
                 }
                 if(mode==2){
-                    pt.prepend("..");
+                    pt.prepend(".");
                 }
             }
         }
